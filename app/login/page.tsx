@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { ArrowRight, LockKeyhole, User } from "lucide-react";
@@ -8,7 +8,11 @@ import Image from "next/image";
 
 export default function LoginPage() {
   const router = useRouter();
-  const supabase = createClient();
+
+  const supabase = useMemo(
+    () => createClient(),
+    []
+  );
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -92,7 +96,9 @@ export default function LoginPage() {
                 type="text"
                 placeholder="Digite seu usuário"
                 value={username}
-                onChange={(event) => setUsername(event.target.value)}
+                onChange={(event) =>
+                  setUsername(event.target.value)
+                }
                 autoComplete="username"
                 required
               />
@@ -109,7 +115,9 @@ export default function LoginPage() {
                 type="password"
                 placeholder="Digite sua senha"
                 value={password}
-                onChange={(event) => setPassword(event.target.value)}
+                onChange={(event) =>
+                  setPassword(event.target.value)
+                }
                 autoComplete="current-password"
                 required
               />
@@ -122,15 +130,36 @@ export default function LoginPage() {
             </div>
           )}
 
-          <button type="submit" disabled={loading}>
-            {loading ? "Entrando..." : "Entrar no painel"}
+          <button
+            type="submit"
+            disabled={loading}
+          >
+            {loading
+              ? "Entrando..."
+              : "Entrar no painel"}
 
-            {!loading && <ArrowRight size={18} />}
+            {!loading && (
+              <ArrowRight size={18} />
+            )}
           </button>
         </form>
 
         <div className="login-footer">
-          Sistema interno • Arte Final
+          <span>
+            Sistema interno • Arte Final
+          </span>
+
+          <div className="login-developer">
+            Desenvolvido por{" "}
+
+            <a
+              href="https://wa.me/5562981848223"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Nicolas.Dev
+            </a>
+          </div>
         </div>
       </section>
     </main>

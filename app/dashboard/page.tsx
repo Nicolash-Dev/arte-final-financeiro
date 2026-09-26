@@ -523,7 +523,6 @@ export default function DashboardPage() {
         </span>
       </button>
 
-
       {menuAberto && (
         <div
           className="mobile-sidebar-overlay"
@@ -532,7 +531,6 @@ export default function DashboardPage() {
           }
         />
       )}
-
 
       <aside
         className={`sidebar ${
@@ -551,7 +549,6 @@ export default function DashboardPage() {
         >
           <X size={20} />
         </button>
-
 
         <div className="sidebar-brand">
 
@@ -577,7 +574,6 @@ export default function DashboardPage() {
 
         </div>
 
-
         <nav className="sidebar-nav">
 
           <button
@@ -593,7 +589,6 @@ export default function DashboardPage() {
             Dashboard
           </button>
 
-
           <button
             onClick={() =>
               navegar(
@@ -607,7 +602,6 @@ export default function DashboardPage() {
 
             Entradas
           </button>
-
 
           <button
             onClick={() =>
@@ -623,7 +617,6 @@ export default function DashboardPage() {
             Saídas
           </button>
 
-
           <button
             onClick={() =>
               navegar(
@@ -638,7 +631,6 @@ export default function DashboardPage() {
             A Receber
           </button>
 
-
           <button
             onClick={() =>
               navegar(
@@ -652,7 +644,6 @@ export default function DashboardPage() {
 
             A Pagar
           </button>
-
 
           <button
             onClick={() =>
@@ -670,6 +661,19 @@ export default function DashboardPage() {
 
         </nav>
 
+        <div className="developer-credit">
+          <span>
+            Desenvolvido por
+          </span>
+
+          <a
+            href="https://wa.me/5562981848223"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Nicolas.Dev
+          </a>
+        </div>
 
         <button
           className="logout"
@@ -683,7 +687,6 @@ export default function DashboardPage() {
         </button>
 
       </aside>
-
 
       <section className="dashboard">
 
@@ -709,7 +712,6 @@ export default function DashboardPage() {
 
         </header>
 
-
         {erro && (
           <div
             style={{
@@ -731,7 +733,6 @@ export default function DashboardPage() {
             {erro}
           </div>
         )}
-
 
         <section className="metric-grid">
 
@@ -770,7 +771,6 @@ export default function DashboardPage() {
 
           </article>
 
-
           <article className="metric-card">
 
             <div className="metric-icon pink">
@@ -806,7 +806,6 @@ export default function DashboardPage() {
 
           </article>
 
-
           <article className="metric-card">
 
             <div className="metric-icon yellow">
@@ -835,7 +834,6 @@ export default function DashboardPage() {
             </small>
 
           </article>
-
 
           <article className="metric-card">
 
@@ -866,7 +864,6 @@ export default function DashboardPage() {
 
           </article>
 
-
           <article className="metric-card">
 
             <div className="metric-icon cyan">
@@ -895,7 +892,6 @@ export default function DashboardPage() {
 
         </section>
 
-
         <section className="panel production-panel">
 
           <div className="panel-head">
@@ -914,7 +910,6 @@ export default function DashboardPage() {
 
           </div>
 
-
           <div className="production-grid">
 
             <div>
@@ -929,7 +924,6 @@ export default function DashboardPage() {
               </strong>
             </div>
 
-
             <div>
               <span>
                 Acabamento
@@ -942,7 +936,6 @@ export default function DashboardPage() {
               </strong>
             </div>
 
-
             <div>
               <span>
                 Pronto
@@ -954,7 +947,6 @@ export default function DashboardPage() {
                   : resumo.pronto}
               </strong>
             </div>
-
 
             <div>
               <span>
@@ -971,7 +963,6 @@ export default function DashboardPage() {
           </div>
 
         </section>
-
 
         <section className="panel recent-panel">
 
@@ -990,7 +981,6 @@ export default function DashboardPage() {
             </div>
 
           </div>
-
 
           {loading ? (
 
@@ -1036,7 +1026,6 @@ export default function DashboardPage() {
                   </tr>
                 </thead>
 
-
                 <tbody>
 
                   {movimentacoes.map(
@@ -1063,13 +1052,11 @@ export default function DashboardPage() {
 
                         </td>
 
-
                         <td>
                           {
                             item.descricao
                           }
                         </td>
-
 
                         <td
                           className={
@@ -1086,13 +1073,11 @@ export default function DashboardPage() {
                           )}
                         </td>
 
-
                         <td>
                           {formatDate(
                             item.data_movimentacao
                           )}
                         </td>
-
 
                         <td>
 

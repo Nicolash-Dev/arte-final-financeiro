@@ -344,11 +344,36 @@ button {
 .login-footer {
   margin-top: 26px;
 
+  display: grid;
+  gap: 7px;
+
   color: #60748e;
 
   text-align: center;
 
   font-size: 12px;
+}
+
+.login-developer {
+  font-size: 11px;
+
+  color: #536880;
+}
+
+.login-developer a {
+  color: var(--cyan);
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.login-developer a:hover {
+  color: #48ddff;
+
+  text-decoration: underline;
 }
 
 @media (max-width: 520px) {
