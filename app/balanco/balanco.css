@@ -1,0 +1,472 @@
+.balanco-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(23,199,239,.07),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 0% 100%,
+      rgba(233,44,156,.04),
+      transparent 30%
+    ),
+    #06101f;
+
+  color: #f5f8fc;
+}
+
+.balanco-topbar {
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 34px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.07);
+
+  background:
+    rgba(7,20,38,.88);
+
+  backdrop-filter:
+    blur(16px);
+}
+
+.back-button {
+  border: 0;
+
+  min-height: 42px;
+
+  padding: 0 15px;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #9aabc0;
+
+  background:
+    rgba(255,255,255,.04);
+
+  font-weight: 800;
+}
+
+.mes-selector {
+  min-height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 14px;
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  border-radius: 12px;
+
+  color: #7edff7;
+
+  background:
+    rgba(255,255,255,.035);
+}
+
+.mes-selector input {
+  border: 0;
+
+  outline: none;
+
+  color: white;
+
+  background:
+    transparent;
+
+  font-weight: 800;
+}
+
+.balanco-container {
+  padding: 34px;
+}
+
+.page-title {
+  margin-bottom: 24px;
+}
+
+.page-title h1 {
+  margin: 7px 0 7px;
+
+  font-size: 42px;
+
+  letter-spacing: -1.5px;
+}
+
+.page-title p {
+  margin: 0;
+
+  color: #8fa0b6;
+}
+
+.balanco-metrics {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+.balanco-card {
+  min-height: 155px;
+
+  padding: 20px;
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(15,31,53,.96),
+      rgba(10,23,41,.96)
+    );
+
+  display: grid;
+
+  gap: 7px;
+}
+
+.balanco-card > span {
+  color: #8fa0b6;
+
+  font-size: 12px;
+}
+
+.balanco-card > strong {
+  font-size: 23px;
+
+  letter-spacing: -.6px;
+}
+
+.balanco-card > small {
+  color: #667993;
+}
+
+.saldo-card {
+  border-color:
+    rgba(23,199,239,.16);
+}
+
+.balanco-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 7px;
+
+  border-radius: 13px;
+}
+
+.balanco-icon.green {
+  color: #5de3b1;
+
+  background:
+    rgba(73,217,165,.1);
+}
+
+.balanco-icon.yellow {
+  color: #ffe261;
+
+  background:
+    rgba(255,226,97,.1);
+}
+
+.balanco-icon.pink,
+.balanco-icon.magenta {
+  color: #ff6ab3;
+
+  background:
+    rgba(233,44,156,.1);
+}
+
+.balanco-icon.cyan {
+  color: #62def9;
+
+  background:
+    rgba(23,199,239,.1);
+}
+
+.balanco-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 2fr)
+    minmax(300px, .8fr);
+
+  gap: 16px;
+
+  margin-top: 16px;
+}
+
+.balanco-panel {
+  padding: 22px;
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(15,31,53,.96),
+      rgba(10,23,41,.96)
+    );
+}
+
+.panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 18px;
+
+  color: #6bdcf7;
+}
+
+.panel-title h2 {
+  margin: 5px 0 0;
+
+  color: white;
+
+  font-size: 18px;
+}
+
+.balanco-table-wrap {
+  overflow-x: auto;
+}
+
+.balanco-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.balanco-table th,
+.balanco-table td {
+  padding: 14px 12px;
+
+  text-align: left;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.06);
+
+  font-size: 13px;
+}
+
+.balanco-table th {
+  color: #687c95;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: .04em;
+}
+
+.balanco-table td {
+  color: #d1dae7;
+}
+
+.mov-type {
+  display: inline-flex;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  font-size: 11px;
+
+  font-weight: 900;
+}
+
+.mov-type.entrada {
+  color: #5de3b1;
+
+  background:
+    rgba(73,217,165,.1);
+}
+
+.mov-type.saida {
+  color: #ff6ab3;
+
+  background:
+    rgba(233,44,156,.1);
+}
+
+.money-green {
+  color: #5de3b1 !important;
+
+  font-weight: 900;
+}
+
+.money-pink {
+  color: #ff6ab3 !important;
+
+  font-weight: 900;
+}
+
+.vencimentos-list {
+  display: grid;
+
+  gap: 10px;
+}
+
+.vencimento-item {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 14px;
+
+  border:
+    1px solid rgba(255,255,255,.07);
+
+  border-radius: 14px;
+
+  background:
+    rgba(255,255,255,.025);
+}
+
+.vencimento-item > div {
+  display: grid;
+
+  gap: 7px;
+}
+
+.vencimento-item strong {
+  font-size: 14px;
+}
+
+.vencimento-item > span {
+  color: #73869e;
+
+  font-size: 12px;
+}
+
+.badge-receber,
+.badge-pagar {
+  display: inline-flex;
+
+  width: fit-content;
+
+  padding: 5px 8px;
+
+  border-radius: 999px;
+
+  font-size: 10px;
+
+  font-weight: 900;
+}
+
+.badge-receber {
+  color: #ffe261;
+
+  background:
+    rgba(255,226,97,.1);
+}
+
+.badge-pagar {
+  color: #ff6ab3;
+
+  background:
+    rgba(233,44,156,.1);
+}
+
+.empty-state-balanco {
+  padding: 28px 12px;
+
+  color: #667993;
+
+  text-align: center;
+}
+
+.table-empty {
+  padding: 38px !important;
+
+  color: #667993 !important;
+
+  text-align: center !important;
+}
+
+.balanco-error {
+  margin-bottom: 16px;
+
+  padding: 12px 14px;
+
+  border:
+    1px solid rgba(255,92,168,.16);
+
+  border-radius: 12px;
+
+  color: #ff91c5;
+
+  background:
+    rgba(255,92,168,.08);
+
+  font-size: 12px;
+}
+
+@media (max-width: 1150px) {
+  .balanco-metrics {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .balanco-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .balanco-metrics {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .balanco-container {
+    padding: 20px 14px;
+  }
+
+  .balanco-topbar {
+    height: auto;
+
+    padding: 14px;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+  }
+
+  .balanco-metrics {
+    grid-template-columns: 1fr;
+  }
+}

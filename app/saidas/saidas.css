@@ -1,0 +1,727 @@
+.saidas-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(233, 44, 156, 0.08),
+      transparent 28%
+    ),
+    #06101f;
+  color: #f5f8fc;
+}
+
+.saidas-topbar {
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 34px;
+
+  border-bottom: 1px solid rgba(255,255,255,.07);
+
+  background: rgba(7,20,38,.88);
+
+  backdrop-filter: blur(16px);
+
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.back-button,
+.nova-saida-top {
+  border: 0;
+
+  min-height: 42px;
+
+  padding: 0 15px;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-weight: 800;
+}
+
+.back-button {
+  color: #9aabc0;
+  background: rgba(255,255,255,.04);
+}
+
+.nova-saida-top {
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e92c9c,
+      #ff5ca8
+    );
+}
+
+.saidas-container {
+  padding: 34px;
+}
+
+.page-title {
+  margin-bottom: 24px;
+}
+
+.page-title h1 {
+  margin: 7px 0 7px;
+
+  font-size: 42px;
+
+  letter-spacing: -1.5px;
+}
+
+.page-title p {
+  margin: 0;
+
+  color: #8fa0b6;
+}
+
+.saida-metrics {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+.saida-metric-card {
+  min-height: 155px;
+
+  padding: 20px;
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(15,31,53,.96),
+      rgba(10,23,41,.96)
+    );
+
+  display: grid;
+  gap: 7px;
+}
+
+.saida-metric-card > span {
+  color: #8fa0b6;
+  font-size: 12px;
+}
+
+.saida-metric-card > strong {
+  font-size: 24px;
+  letter-spacing: -.6px;
+}
+
+.saida-metric-card > small {
+  color: #667993;
+}
+
+.saida-metric-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 7px;
+
+  border-radius: 13px;
+}
+
+.saida-metric-icon.pink {
+  color: #ff6ab3;
+  background: rgba(233,44,156,.1);
+}
+
+.saida-metric-icon.yellow {
+  color: #ffe260;
+  background: rgba(255,226,96,.1);
+}
+
+.saida-metric-icon.cyan {
+  color: #62def9;
+  background: rgba(23,199,239,.1);
+}
+
+.saidas-panel {
+  margin-top: 16px;
+
+  padding: 20px;
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(15,31,53,.96),
+      rgba(10,23,41,.96)
+    );
+}
+
+.saidas-toolbar {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 18px;
+}
+
+.search-box {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  max-width: 520px;
+
+  padding: 0 14px;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  border-radius: 13px;
+
+  background: #07101d;
+
+  color: #73849a;
+}
+
+.search-box input {
+  width: 100%;
+  height: 46px;
+
+  border: 0;
+  outline: none;
+
+  background: transparent;
+
+  color: white;
+}
+
+.nova-saida-button {
+  min-height: 46px;
+
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: 0;
+
+  border-radius: 13px;
+
+  font-weight: 900;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e92c9c,
+      #ff5ca8
+    );
+}
+
+.saidas-table-wrap {
+  overflow-x: auto;
+}
+
+.saidas-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.saidas-table th,
+.saidas-table td {
+  padding: 14px 12px;
+
+  text-align: left;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.06);
+
+  font-size: 13px;
+}
+
+.saidas-table th {
+  color: #687c95;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: .04em;
+}
+
+.saidas-table td {
+  color: #d1dae7;
+}
+
+.descricao-cell {
+  display: grid;
+  gap: 3px;
+}
+
+.descricao-cell strong {
+  color: #f4f7fb;
+}
+
+.descricao-cell span {
+  max-width: 280px;
+
+  color: #71839a;
+
+  font-size: 11px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.saida-value {
+  color: #ff6cae !important;
+
+  font-weight: 900;
+}
+
+.saida-status {
+  min-height: 34px;
+
+  padding: 0 10px;
+
+  border-radius: 999px;
+
+  outline: none;
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+.saida-status.a_pagar {
+  color: #ffe261;
+
+  border:
+    1px solid rgba(255,226,97,.2);
+
+  background:
+    rgba(255,226,97,.08);
+}
+
+.saida-status.pago {
+  color: #5de3b1;
+
+  border:
+    1px solid rgba(73,217,165,.22);
+
+  background:
+    rgba(73,217,165,.08);
+}
+
+.table-empty {
+  padding: 38px !important;
+
+  text-align: center !important;
+
+  color: #667993 !important;
+}
+
+.modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 100;
+
+  background:
+    rgba(0,0,0,.58);
+
+  backdrop-filter: blur(4px);
+}
+
+.saida-drawer {
+  position: fixed;
+
+  z-index: 110;
+
+  right: 0;
+  top: 0;
+
+  width: min(100%, 430px);
+
+  height: 100vh;
+
+  overflow-y: auto;
+
+  padding: 26px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #0d2037,
+      #071420
+    );
+
+  border-left:
+    1px solid rgba(255,255,255,.1);
+
+  box-shadow:
+    -25px 0 80px rgba(0,0,0,.45);
+}
+
+.drawer-head {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 26px;
+}
+
+.drawer-head h2 {
+  margin: 6px 0 0;
+
+  font-size: 26px;
+}
+
+.drawer-close {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border: 0;
+
+  border-radius: 11px;
+
+  color: #94a7bd;
+
+  background:
+    rgba(255,255,255,.05);
+}
+
+.saida-form {
+  display: grid;
+  gap: 17px;
+}
+
+.saida-form label > span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #c5cfdb;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+.saida-form input,
+.saida-form select,
+.saida-form textarea {
+  width: 100%;
+
+  min-height: 48px;
+
+  padding: 0 13px;
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  border-radius: 12px;
+
+  outline: none;
+
+  color: #eff5fc;
+
+  background:
+    #07111e;
+}
+
+.saida-form textarea {
+  padding: 12px 13px;
+
+  resize: vertical;
+}
+
+.saida-form input:focus,
+.saida-form select:focus,
+.saida-form textarea:focus {
+  border-color:
+    rgba(233,44,156,.45);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(233,44,156,.06);
+}
+
+.form-row {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 12px;
+}
+
+.drawer-actions {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1.4fr;
+
+  gap: 10px;
+
+  margin-top: 8px;
+}
+
+.cancel-button,
+.save-button {
+  min-height: 48px;
+
+  border-radius: 12px;
+
+  font-weight: 900;
+}
+
+.cancel-button {
+  border:
+    1px solid rgba(255,255,255,.1);
+
+  color: #9cafc5;
+
+  background:
+    rgba(255,255,255,.03);
+}
+
+.save-button {
+  border: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e92c9c,
+      #ff5ca8
+    );
+}
+
+.save-button:disabled {
+  opacity: .6;
+
+  cursor: wait;
+}
+
+.saida-error {
+  margin: 12px 0;
+
+  padding: 12px 14px;
+
+  border:
+    1px solid rgba(255,92,168,.16);
+
+  border-radius: 12px;
+
+  color: #ff91c5;
+
+  background:
+    rgba(255,92,168,.08);
+
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .saida-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .saidas-container {
+    padding: 20px 14px;
+  }
+
+  .saidas-topbar {
+    padding: 0 14px;
+  }
+
+  .saidas-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    max-width: none;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .drawer-actions {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================
+   AÇÕES
+========================= */
+
+.saida-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.saida-action-button {
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  transition: 0.18s ease;
+}
+
+.saida-action-button.edit {
+  color: #62def9;
+
+  border:
+    1px solid
+    rgba(23,199,239,.18);
+
+  background:
+    rgba(23,199,239,.07);
+}
+
+.saida-action-button.edit:hover {
+  color: #a9efff;
+
+  border-color:
+    rgba(23,199,239,.4);
+
+  background:
+    rgba(23,199,239,.14);
+
+  transform:
+    translateY(-1px);
+}
+
+.saida-action-button.delete {
+  color: #ff6ab3;
+
+  border:
+    1px solid
+    rgba(233,44,156,.2);
+
+  background:
+    rgba(233,44,156,.07);
+}
+
+.saida-action-button.delete:hover {
+  color: #ffacd3;
+
+  border-color:
+    rgba(233,44,156,.42);
+
+  background:
+    rgba(233,44,156,.15);
+
+  transform:
+    translateY(-1px);
+}
+
+
+/* =========================
+   AVISO DE BLOQUEIO
+========================= */
+
+.financial-lock-warning {
+  display: grid;
+  gap: 5px;
+
+  margin-bottom: 20px;
+
+  padding: 13px 14px;
+
+  border:
+    1px solid
+    rgba(255,226,96,.17);
+
+  border-radius: 13px;
+
+  background:
+    rgba(255,226,96,.06);
+}
+
+.financial-lock-warning strong {
+  color: #ffe260;
+
+  font-size: 12px;
+}
+
+.financial-lock-warning span {
+  color: #8fa0b6;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   CAMPOS BLOQUEADOS
+========================= */
+
+.saida-form input:disabled,
+.saida-form select:disabled {
+  opacity: .55;
+
+  cursor: not-allowed;
+
+  color: #8190a3;
+
+  background: #09111b;
+}
+
+
+@media (max-width: 650px) {
+  .saida-actions {
+    min-width: 78px;
+  }
+}

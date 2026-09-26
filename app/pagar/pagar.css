@@ -1,0 +1,377 @@
+.pagar-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(233, 44, 156, 0.08),
+      transparent 28%
+    ),
+    #06101f;
+
+  color: #f5f8fc;
+}
+
+.pagar-topbar {
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 34px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.07);
+
+  background:
+    rgba(7,20,38,.88);
+
+  backdrop-filter:
+    blur(16px);
+}
+
+.back-button {
+  border: 0;
+
+  min-height: 42px;
+
+  padding: 0 15px;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #9aabc0;
+
+  background:
+    rgba(255,255,255,.04);
+
+  font-weight: 800;
+}
+
+.pagar-container {
+  padding: 34px;
+}
+
+.page-title {
+  margin-bottom: 24px;
+}
+
+.page-title h1 {
+  margin: 7px 0 7px;
+
+  font-size: 42px;
+
+  letter-spacing: -1.5px;
+}
+
+.page-title p {
+  margin: 0;
+
+  color: #8fa0b6;
+}
+
+.pagar-metrics {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+.pagar-card {
+  min-height: 155px;
+
+  padding: 20px;
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(15,31,53,.96),
+      rgba(10,23,41,.96)
+    );
+
+  display: grid;
+
+  gap: 7px;
+}
+
+.pagar-card > span {
+  color: #8fa0b6;
+
+  font-size: 12px;
+}
+
+.pagar-card > strong {
+  font-size: 24px;
+
+  letter-spacing: -.6px;
+}
+
+.pagar-card > small {
+  color: #667993;
+}
+
+.pagar-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 7px;
+
+  border-radius: 13px;
+}
+
+.pagar-icon.yellow {
+  color: #ffe260;
+
+  background:
+    rgba(255,226,96,.1);
+}
+
+.pagar-icon.green {
+  color: #5de3b1;
+
+  background:
+    rgba(73,217,165,.1);
+}
+
+.pagar-icon.pink {
+  color: #ff6ab3;
+
+  background:
+    rgba(233,44,156,.1);
+}
+
+.pagar-panel {
+  margin-top: 16px;
+
+  padding: 20px;
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(15,31,53,.96),
+      rgba(10,23,41,.96)
+    );
+}
+
+.pagar-toolbar {
+  margin-bottom: 18px;
+}
+
+.search-box {
+  max-width: 520px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 14px;
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  border-radius: 13px;
+
+  background: #07101d;
+
+  color: #73849a;
+}
+
+.search-box input {
+  width: 100%;
+  height: 46px;
+
+  border: 0;
+  outline: none;
+
+  background: transparent;
+
+  color: white;
+}
+
+.pagar-table-wrap {
+  overflow-x: auto;
+}
+
+.pagar-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.pagar-table th,
+.pagar-table td {
+  padding: 14px 12px;
+
+  text-align: left;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.06);
+
+  font-size: 13px;
+}
+
+.pagar-table th {
+  color: #687c95;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: .04em;
+}
+
+.pagar-table td {
+  color: #d1dae7;
+}
+
+.pagar-description {
+  display: grid;
+
+  gap: 3px;
+}
+
+.pagar-description strong {
+  color: #f5f8fc;
+}
+
+.pagar-description span {
+  max-width: 260px;
+
+  color: #71839a;
+
+  font-size: 11px;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+}
+
+.pagar-value {
+  color: #ff6cae !important;
+
+  font-weight: 900;
+}
+
+.pagar-status {
+  display: inline-flex;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  font-size: 11px;
+
+  font-weight: 900;
+}
+
+.pagar-status.a_pagar {
+  color: #ffe261;
+
+  background:
+    rgba(255,226,97,.1);
+}
+
+.pagar-status.pago {
+  color: #5de3b1;
+
+  background:
+    rgba(73,217,165,.1);
+}
+
+.pagar-button {
+  min-height: 34px;
+
+  padding: 0 11px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  border: 0;
+
+  border-radius: 10px;
+
+  color: #062034;
+
+  background:
+    linear-gradient(
+      135deg,
+      #43d6a1,
+      #5de3b1
+    );
+
+  font-size: 11px;
+
+  font-weight: 900;
+}
+
+.pago-date {
+  color: #6f8199;
+
+  font-size: 11px;
+}
+
+.pagar-error {
+  margin: 12px 0;
+
+  padding: 12px 14px;
+
+  border:
+    1px solid rgba(255,92,168,.16);
+
+  border-radius: 12px;
+
+  color: #ff91c5;
+
+  background:
+    rgba(255,92,168,.08);
+
+  font-size: 12px;
+}
+
+.table-empty {
+  padding: 38px !important;
+
+  text-align: center !important;
+
+  color: #667993 !important;
+}
+
+@media (max-width: 850px) {
+  .pagar-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .pagar-container {
+    padding: 20px 14px;
+  }
+
+  .pagar-topbar {
+    padding: 0 14px;
+  }
+}
